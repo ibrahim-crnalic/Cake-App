@@ -9,7 +9,7 @@ function Footer() {
     <div className="footerWrapper">
       <div className="footerLeft">
         <h1>CAKE</h1>
-        <p> We implement your delicious dreams.</p>
+        <p> We Implement your delicious dreams.</p>
         <p>Baking the difference.</p>
       </div>
       <div className="footerCenter">
