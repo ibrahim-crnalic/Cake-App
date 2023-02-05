@@ -31,7 +31,7 @@ function Footer() {
           <img src={FacebookIcon} alt="facebookIcon"/>
           <img src={InstagramIcon} alt="InstagramIcon"/>
         </div>
-        <p>This website is built only for studying purposes</p>
+        <p>This website is built only for studying purposes.</p>
         
       </div>
     </div>
