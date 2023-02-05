@@ -1,0 +1,54 @@
+.heroWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/images/heroPict.jpg");
+  position: relative;
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    height: 100%;
+    h1 {
+      color: $secondaryColor;
+      font-size: 70px;
+      margin: 10px 0;
+      font-family: $fontSecundary;
+    }
+
+    button {
+      width: 170px;
+      height: 45px;
+      font-size: 19px;
+      color: $secondaryColor;
+      border-radius: 2rem;
+      border-color: $secondaryColor;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .heroWrapper {
+    .heroContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      width: 80%;
+      h1 {
+        font-size: 40px;
+      }
+      button {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        
+      }
+    }
+  }
+}

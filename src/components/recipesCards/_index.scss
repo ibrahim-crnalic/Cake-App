@@ -1,0 +1,91 @@
+.recipesCardWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100%;
+  background-color: #f5eded;
+  padding-top: 20px;
+  margin-top: 4.4rem;
+  position: relative;
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    position: relative;
+    background-color: white;
+    .cardImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+      width: 100%;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .cardText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-family: $fontPrimary;
+        color: $secondaryColor;
+        margin: 20px;
+        text-align: center;
+      }
+      p {
+        font-family: $fontPrimary;
+        color: $primaryColor;
+        margin: 20px;
+        text-align: center;
+      }
+    }
+    .cardButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      button {
+        background-color: $secondaryColor;
+        font-family: $fontPrimary;
+        font-size: 15px;
+        color: aliceblue;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: $primaryColor;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 895px) and (max-width: 1360px) {
+  .recipesCardWrapper {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .recipesCardWrapper {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 876px) {
+  .recipesCardWrapper {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,52 @@
+.mainChefWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    .mainChefimage{
+        padding-left: 20px;
+        img{
+            height: 500px;
+            width: 500px;
+        }
+    }
+    .mainChefBio{
+        display: flex;
+        flex-direction: column;
+        
+        padding: 0 5rem;
+        h1{
+            font-family: $fontPrimary;
+            color: $secondaryColor;
+        }
+        p{
+            font-family: $fontPrimary;
+            color: $primaryColor;
+        }
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .mainChefWrapper{
+        .mainChefimage{
+            padding-left: 0;
+            img{
+                width: 100%;
+            }
+        }
+        flex-direction: column;
+        justify-content: center;
+        .mainChefBio{
+            width: 90%;
+            padding: 0;
+            h1{
+                text-align: center;
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+$primaryColor:#992323;
+$secondaryColor: #570909;
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: Fjala;
+    src: url(assets/fonts/FjallaOne-Regular.ttf);
+  }
+
+$fontPrimary:Roboto;
+$fontSecundary:Fjala;

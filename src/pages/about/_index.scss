@@ -1,0 +1,46 @@
+.aboutWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#f5eded;
+    .aboutText{
+        width: 45%;
+        background-color: white;
+        padding: 2rem;
+        h1{
+            font-family: $fontPrimary;
+        }
+        p{
+            text-align: justify;
+            font-family: $fontPrimary;
+        }
+        .footnote{
+            font-size: 12px;
+            font-style: italic;
+            font-family: $fontPrimary;
+            color: darkgray;
+        }
+    }
+    .aboutMap{
+        width: 45%;
+
+    }
+}
+@media only screen and (max-width: 1024px){
+    .aboutWrapper{
+        flex-direction: column;
+        padding: 2rem 0;
+        .aboutText{
+            width: 90%;
+            box-sizing: border-box;
+
+        }
+        .aboutMap{
+            width: 90%;
+            margin-top: 2rem;
+        }
+    }
+    
+}

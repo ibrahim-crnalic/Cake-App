@@ -1,0 +1,99 @@
+.navBarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .navBarLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 20px;
+    .link {
+      font-style: normal;
+      font-weight: bold;
+      color: $primaryColor;
+      font-family: $fontPrimary;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+    }
+    .active {
+      border-bottom: 2px solid $primaryColor;
+    }
+  }
+  .navBarTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20px;
+    h1 {
+      color: $primaryColor;
+      font-weight: 300;
+      font-family: $fontPrimary;
+      font-size: 25px;
+    }
+  }
+}
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: none;
+  .navBarTitleMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5px;
+    h1 {
+      color: $primaryColor;
+      font-weight: 300;
+      font-family: $fontPrimary;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+  .navBarBurger {
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navBarWrapper {
+    position: relative;
+    display: none;
+    .navBarTitle {
+      margin-left: 20px;
+    }
+  }
+  .navNone {
+    display: none;
+  }
+  .navContent {
+    display: flex;
+    z-index: 9;
+    .navBarTitleMobile {
+      z-index: 99;
+    }
+
+    .navBarBurger {
+      position: absolute;
+      right: 0;
+      margin-top: 20px;
+      margin-right: 20px;
+      z-index: 99;
+    }
+  }
+}

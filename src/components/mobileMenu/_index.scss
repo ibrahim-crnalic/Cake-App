@@ -1,0 +1,48 @@
+.mobileMenuWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+
+    .menuHead{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .closeIcon {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 0;
+            margin-top: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    
+    }
+    .menuBody{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        .link{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: $fontPrimary;
+            font-weight: bold;
+            color: $primaryColor;
+            margin-bottom: 15px;
+            margin-left: 15px;
+        }
+
+    }
+
+} 
+@media only screen and (min-width: 1024px) {
+    .mobileMenuWrapper{
+        display: none;
+    }
+}
+
