@@ -8,15 +8,14 @@ import About from "./pages/about";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/recipes" element={<Recipes />} />
-          <Route path="/about" element={<About/>}/>
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
-      
+      <Footer />
     </>
   );
 }
